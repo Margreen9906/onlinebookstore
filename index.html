@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .navbar-brand, .nav-link {
+      color: #333 !important;
+    }
+    .hero {
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    }
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+  .carousel-item img {
+    max-height: 400px;  
+    width: 100%;        
+    object-fit: cover;
+  }  
+
+    footer {
+      background-color: #e9ecef;
+      color: #333;
+    }
+    .progress {
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">BookStore</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ Hero Section -->
+<section class="hero text-center p-5">
+  <div class="container">
+    <h1 class="display-4">A Word of Books, Just One Click Away</h1>
+    <p class="lead">Discover the latest novels, bestseeler, and professional books- All in one place</p>
+    <a href="#features" class="btn btn-outline-primary btn-lg">Explore Books</a>
+  </div>
+</section>
+
+<!-- ✅ Features Section -->
+<section id="features" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Book Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3">
+          <img src="./images/bookcard5.jpg" class="card-img-top" height="500px"  alt="book 1">
+          <div class="card-body">
+            <h5 class="card-title">The Forty Rules of Love</h5>
+            <p class="card-text">A deep and inspiring novel anout love, Shams and Rumi, Aspirtual and romantic tale by Elif Shafak</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal">More Info</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3">
+          <img src="./images/bookcard6.jpg" class="card-img-top" height="500px" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">The Architect's Apprentice</h5>
+            <p class="card-text">A historical novel by Elif Shafak about a young apprentice to a great Ottoman architect. A story of art, and love</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3">
+          <img src="./images/bookcard4.jpg" class="card-img-top"  height="500px" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Black Milk</h5>
+            <p class="card-text">An adventurous and thought-provoking novel about life, power, and difficult choices in a world full of mystery</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#productModal">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Carousel -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Books</h2>
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="./images/about us.jpg"  class="d-block mx-auto" alt="Item 1">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="./images/banner.jpg" class="d-block mx-auto" alt="Item 2">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="./images/WhatsApp Image 2025-07-06 at 16.30.18_29df6bf7.jpg" class="d-block mx-auto" alt="Item 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Vision Section -->
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h3>Our Mission</h3>
+    <p>Our mission is to make quality books accessible to everyone and spread the love of reading</p>
+  </div>
+</section>
+
+<!-- ✅ Progress Bars -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h3 class="text-center mb-4">Our Progress</h3>
+    <div class="mb-3">
+      <label>Customer Satisfaction</label>
+      <div class="progress">
+        <div class="progress-bar bg-success" style="width: 90%">90%</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label>Reading goals </label>
+      <div class="progress">
+        <div class="progress-bar bg-info" style="width: 80%">80%</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label>Monthly Reading Target </label>
+      <div class="progress">
+        <div class="progress-bar bg-warning" style="width: 70%">70%</div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<!-- ✅ Contact Section with Info -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6 mb-4 border-end pe-md-4">
+        <form>
+          <div class="mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label>Message</label>
+            <textarea class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4 text-center mt-4">
+        <h5>Contact Information</h5>
+        <ul class="list-unstyled">
+          <li><strong>📍 Address:</strong> Kabul, Afghanistan</li>
+          <li><strong>📞 Phone:</strong> +93 700 000 000</li>
+          <li><strong>✉ Email:</strong> info@onlinestore.af</li>
+          <li><strong>⏰ Working Hours:</strong> Sat – Thu, 9am – 5pm</li>
+        </ul>
+
+        <div class="mt-4">
+          <h6>Follow us:</h6>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Footer -->
+<footer class="text-center py-3">
+  &copy; 2025 Online Store. Built by BookStore.
+</footer>
+
+<!-- ✅ Modal -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Product Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>More details about the product can go here...</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
